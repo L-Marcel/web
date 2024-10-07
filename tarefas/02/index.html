@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de alunos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col gap-3 bg-zinc-200 text-zinc-900">
+    <header class="flex justify-center items-center text-3xl font-semibold py-10 text-white bg-zinc-700">
+        <h1>Cadastro de Alunos</h1>
+    </header>
+    <main class="flex flex-col gap-3">
+        <section class="flex flex-col gap-3">
+            <h2 class="font-semibold text-xl text-zinc-800">Alunos Cadastrados</h2>
+            <table class="table-auto border-collapse border border-zinc-200 w-screen">
+                <thead>
+                    <tr>
+                        <th class="text-left bg-zinc-700 text-white border border-zinc-300 px-2 py-1">Nome</th>
+                        <th class="text-left bg-zinc-700 text-white border border-zinc-300 px-2 py-1">Idade</th>
+                        <th class="text-left bg-zinc-700 text-white border border-zinc-300 px-2 py-1">Curso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border border-zinc-300 px-2 py-1">João Silva</td>
+                        <td class="border border-zinc-300 px-2 py-1">22</td>
+                        <td class="border border-zinc-300 px-2 py-1">Desenvolvimento Web</td>
+                    </tr>
+                    <tr class="bg-zinc-100">
+                        <td class="border border-zinc-300 px-2 py-1">Maria Oliveira</td>
+                        <td class="border border-zinc-300 px-2 py-1">24</td>
+                        <td class="border border-zinc-300 px-2 py-1">Design Gráfico</td>
+                    </tr>
+                    <tr>
+                        <td class="border border-zinc-300 px-2 py-1">Itamir</td>
+                        <td class="border border-zinc-300 px-2 py-1">12</td>
+                        <td class="border border-zinc-300 px-2 py-1">teste</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="flex flex-col gap-3">
+            <h2 class="font-semibold text-xl text-zinc-800">Adicionar Novo Aluno</h2>
+            <form class="flex flex-col gap-3">
+                <label class="flex flex-col gap-1">
+                    Nome
+                    <input class="border border-zinc-300 outline-none ring-offset-2 ring-zinc-700 ring-offset-zinc-200 focus:ring-2" type="text">
+                </label>
+                <label class="flex flex-col gap-1">
+                    Idade
+                    <input class="border border-zinc-300 outline-none ring-offset-2 ring-zinc-700 ring-offset-zinc-200 focus:ring-2" type="text">
+                </label>
+                <label class="flex flex-col gap-1">
+                    Curso
+                    <input class="border border-zinc-300 outline-none ring-offset-2 ring-zinc-700 ring-offset-zinc-200 focus:ring-2" type="text">
+                </label>
+                <button class="flex w-full justify-center items-center bg-zinc-700 text-white py-2">
+                    Adicionar Aluno
+                </button>
+            </form>
+        </section>
+    </main>
+    <footer class="flex justify-center items-center text-zinc-700">
+        <p>@ 2024 Curso Online</p>
+    </footer>
+</body>
+</html>
