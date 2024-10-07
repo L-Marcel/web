@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply overflow-hidden;
+};
+
+main {
+  @apply bg-slate-300
+    w-screen
+    h-screen
+    flex
+    flex-col
+    items-center
+    justify-center
+    p-0
+    sm:px-20
+    sm:py-10;
+}
+
+section {
+  @apply bg-white
+    text-zinc-900
+    flex
+    flex-col
+    items-center
+    justify-start
+    sm:justify-center
+    px-8
+    py-12
+    rounded-none
+    shadow-none
+    h-full
+    sm:h-auto
+    sm:rounded-xl
+    sm:shadow-lg
+    gap-4;
+
+  h1 {
+    @apply text-blue-500
+      text-center
+      font-semibold
+      w-full
+      text-3xl;
+  }
+
+  p {
+    @apply text-lg
+      text-wrap
+      text-center;
+    
+    span {
+      @apply text-red-500;
+    }
+  }
+}
