@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de alunos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col gap-3 bg-zinc-200 text-zinc-900">
+    <main class="flex flex-col w-full h-screen justify-center items-center">
+        <form class="flex flex-col gap-3 bg-white w-1/2 rounded-md p-4">
+            <label class="text-zinc-900 font-bold text-base">
+                Nome:
+                <input value="" class="flex h-7 border-zinc-300 border w-full rounded-sm px-2 py-1 text-sm font-normal" type="text" name="nome"/>
+            </label>
+            <label class="text-zinc-900 font-bold text-base">
+                Email:
+                <input value="" class="flex h-7 border-zinc-300 border w-full rounded-sm px-2 py-1 text-sm font-normal" type="text" name="email"/>
+            </label>
+            <label class="text-zinc-900 font-bold text-base">
+                Senha:
+                <input value="" class="flex h-7 border-zinc-300 border w-full rounded-sm px-2 py-1 text-sm font-normal" type="password" name="password"/>
+            </label>
+            <label class="text-zinc-900 font-bold text-base">
+                Gênero:
+                <select class="bg-transparent flex h-7 border-zinc-300 border w-full rounded-sm px-2 py-1 text-sm font-normal" name="genrer">
+                    <option selected value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Outro">Outro</option>
+                </select>
+            </label>
+            <label class="text-zinc-900 font-bold text-base">
+                Mensagem:
+                <textarea value="" class="min-h-24 flex h-7 border-zinc-300 border w-full rounded-sm px-2 py-1 text-sm font-normal"></textarea>
+            </label>
+            <button class="mt-2 bg-blue-600 px-4 py-2 rounded-md text-zinc-100 w-min" type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
